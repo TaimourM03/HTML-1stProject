@@ -1,5 +1,5 @@
 # HTML-1stProject
-En este repositorio esta colgado todo el proyecto hecho en clase de HTML.
+      En este repositorio esta colgado todo el proyecto hecho en clase de HTML.
 
 ####  [Pagina principal (Índice desde el cual podemos acceder a todos los ejercicios.)](https://taimourmahroofprac0.000webhostapp.com/EP1/)
    
