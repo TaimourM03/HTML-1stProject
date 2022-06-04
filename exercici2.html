@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+
+      <meta charset="UTF-8">
+      <meta name="description" content="Free Web tutorials">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="Taimour Mahroof">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Exercici 2</title>
+
+  </head>
+  <body>
+
+    <h1>Ejercicio 2</h1>
+
+
+
+    <h2>A - Què és el doctype i per què serveix? Quins són els doctypes d’un XHTML i d’un HTML5?</h2>
+
+    <p>El doctype es una etiqueta que define el tipo de documento.
+       <pre>
+       el doctype en HTML5 es:
+       &lt;!DOCTYPE html&gt;
+
+       en cambio en XHTML es mas complicado ya que la declaracion se tiene que definir en DTD (Document Type Definition) por ejemplo,
+       &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+       </pre>
+
+
+
+
+
+    <h2>B - Com indiquem i a on, que una pàgina web té els seus continguts escrits en anglès?</h2>
+    <p>Se tiene que indicar dentro de head con el etiqueta &lt;html lang="en"&gt;.</p>
+
+
+
+
+
+
+
+    <h2>C - Per què serveix l’etiqueta &lt;meta&gt; i on va ubicada? Posa exemples.</h2>
+    <p>Sirve para describir el contenido de la pagina web o mejor conocidos como metadatos, va ubicada dentro del head, por ejemplo podemos describir el contenido de la web, el idioma de la web, decir quien es el autor...
+
+    <pre>
+      &lt;DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="description" content="Free Web tutorials"&gt;
+            &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+            &lt;meta name="author" content="Taimour Mahroof"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+    </pre>
+
+
+
+
+
+    <h2>D - Com s’enllacen els documents CSS i Javascript dins d’un document HTML? Posa exemples.</h2>
+    <p>Para enlazar archivos ".js" externos alojados por un tercero en HTML, es decir un documento JavaScript, se usa la etiqueta &lt;src&gt;.
+       <pre>
+       Ejemplo:
+       &lt;!DOCTYPE html&gt;
+       &lt;head&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+
+         &lt;script src="./script.js"&gt;&lt;/script&gt;
+       &lt;/body&gt;
+       &lt;/html&gt;
+       </pre>
+    <p>Para enlazar archivos CSS en HTML se utiliza el etiqueta &lt;link&gt;
+       <pre>
+       Ejemplo:
+       &lt;!DOCTYPE html&gt;
+       &lt;head&gt;
+         &lt;link href="styles/style.css" rel="stylesheet" type="text/css"&gt;
+         &lt;title&gt;Ejemplo de etiqueta de script Src&lt;/title&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+       &lt;/body&gt;
+       &lt;/html&gt;
+       </pre>
+
+     <h2>E - Quina diferència hi ha entre etiquetes de tipus block i etiquetes de tipus inline? Posa exemples.</h2>
+     <pre>
+Las etiquetas de tipo bloque siempre:
+      1.Comienzan en una nueva línea.
+      2.Ocupan todo el ancho disponible (se extiende hacia la izquierda y hacia la derecha tanto como puede).
+      3.Tienen un margen superior e inferior, mientras que un elemento en línea no lo tiene.
+
+Ejemplo de etiqueta de tipo bloque seria la etiqueta &lt;div&gt;:
+
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;body&gt;
+
+              &lt;div style="border: 1px solid black"&gt;Hello World&lt;/div&gt;
+
+              &lt;p&gt;The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).&lt;/p&gt;
+
+          &lt;/body&gt;
+        &lt;/html&gt;
+
+<img src="imatge/Screenshot_1.jpg" alt="error">
+
+
+
+
+
+
+
+En cambio las etiquetas de tipo inline:
+      1.No comienzan en una nueva línea.
+      2.Solo ocupan tanto ancho como sea necesario.
+      3.No tienen margen superior y inferior.
+
+Ejemplo de etiqueta de tipo inline seria la etiqueta &lt;span&gt;:
+
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;body&gt;
+
+              &lt;p&gt;This is an inline span &lt;span style="border: 1px solid black">Hello World&lt;/span&gt; element inside a paragraph.&lt;/p&gt;
+
+              &lt;p&gt;The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.&lt;/p&gt;
+
+          &lt;/body&gt;
+        &lt;/html&gt;
+
+<img src="imatge/Screenshot_2.png" alt="error">
+
+     </pre>
+<h2>F - En HTML5 com ho faries per, fent només un clic, amagar / ensenyar un contingut? (per exemple, vols mostrar el títol d’un llibre però no els seus
+altres detalls - autor, número de pàgines, gènere, etc.- però fent clic llavors es mostraran aquests detalls a continuació del títol). Posa un exemple.</h2>
+
+<p> Se haria de la siguiente forma:<p>
+<pre>
+  &lt;h3&gt;Autor: Alberto Jimenez&lt;span id="info"&gt;.&lt;/span&gt;&lt;/h3&gt;
+
+  &lt;script&gt;
+          function Aparecer() {
+          document.getElementById("info").innerHTML = ", titulo de la obra: La Sombra Oscura, genero de la obra: Novela policíaca ";
+  }
+  function Desaparecer() {
+  document.getElementById("info").innerHTML = ".";
+  }
+  &lt;/script&gt;
+
+  &lt;button type="button" onclick="Aparecer()"&gt;Mas información&lt;/button&gt;
+  &lt;button type="button" onclick="Desaparecer()"&gt;Solo me interesa el autor&lt;/button&gt;
+</pre>
+<p> creamos un header o un parrafo al cual le pondremos un punto al final que estara con &lt;span&gt; y le ponemos un id dentro del span,
+tambien creamos dos botones, y dos funciones (dentro de script), en las funciones tenemos que usar el &lt;getElementById("")&gt;, y dentro
+de las comillas ponemos el nombre del id que pusimos anteriormente, despues escribimos un innerHTML, que sirve para substituir texto, pondremos
+un igual unas comillas y el mensaje dentro, en la segunda funcion en el mensaje ponemos un ".".</p>
+
+
+<h3>Autor: Alberto Jimenez<span id="info">.</span></h3>
+
+<script>
+        function Aparecer() {
+        document.getElementById("info").innerHTML = ", titulo de la obra: La Sombra Oscura, genero de la obra: Novela policíaca ";
+}
+function Desaparecer() {
+document.getElementById("info").innerHTML = ".";
+}
+</script>
+
+<button type="button" onclick="Aparecer()">Mas información</button>
+<button type="button" onclick="Desaparecer()">Solo me interesa el autor</button>
+
+<h2>G - Què és el canvas d’HTML5 i per què serveix? Posa un exemple.</h2>
+<p>La etiqueta HTML &lt;canvas&gt; se utiliza para dibujar gráficos, sobre la marcha, mediante secuencias de comandos (generalmente JavaScript).
+Canvas tiene varios métodos para dibujar trazados, cuadros, círculos, texto y agregar imágenes. Ejemplo:  </p>
+
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Error
+</canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+
+</script>
+
+
+
+
+
+
+
+<h2>H - Què és l’atribut role d’HTML5? Quina és la seva relació amb l’accessibilitat d’una web?  </h2>
+<pre>Los atributos role permiten al creador de una página añadir información a sus documentos HTML que luego puede ser
+extraída automáticamente por una máquina para obtener información sobre el propósito de cada elemento de la página.
+
+Las personas ciegas y con otros tipos de discapacidad utilizan dispositivos y navegadores especiales.
+Si una página utiliza los atributos "role" para describir el propósito de cada elemento, la navegación de esas personas
+será mucho más agradable, ya que su navegador especial es capaz de "entender" cómo está creada la página y puede leer
+los contenidos al usuario de manera mucho más lógica.</pre>
+
+
+    </body>
+</html>
