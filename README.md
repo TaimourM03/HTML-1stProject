@@ -5,7 +5,7 @@ En este repositorio esta colgado todo el proyecto hecho en clase de HTML.
    
 ####  [Ejercicio 1 (explicación de las etiquetas semánticas.)](https://taimourmahroofprac0.000webhostapp.com/EP1/exercici1.html)
    
-####  [Ejercicio 2 (Metaetiquetas, tipos de etiquetas, pequeña introducción a CSS + JS, HTML Canvas y Atributos.](https://taimourmahroofprac0.000webhostapp.com/EP1/exercici2.html)
+####  [Ejercicio 2 (Metaetiquetas, tipos de etiquetas, pequeña introducción a CSS + JS, HTML Canvas y Atributos.)](https://taimourmahroofprac0.000webhostapp.com/EP1/exercici2.html)
 
 ####  [Ejercicio 3 (Formulario sobre el anime One Piece, con inputs, textareas y options.)](https://taimourmahroofprac0.000webhostapp.com/EP1/exercici3.html)
 
