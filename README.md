@@ -1,7 +1,7 @@
 # HTML-1stProject
       En este repositorio esta colgado todo el proyecto hecho en clase de HTML.
 
-####  [Pagina principal (Índice desde el cual podemos acceder a todos los ejercicios.)](https://taimourmahroofprac0.000webhostapp.com/EP1/)
+####  [Pagina principal [aka index] (Índice desde el cual podemos acceder a todos los ejercicios.)](https://taimourmahroofprac0.000webhostapp.com/EP1/)
    
 ####  [Ejercicio 1 (explicación de las etiquetas semánticas.)](https://taimourmahroofprac0.000webhostapp.com/EP1/exercici1.html)
    
